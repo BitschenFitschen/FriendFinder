@@ -1,0 +1,273 @@
+<head>
+	<meta charset="UTF-8">
+	<title>FriendFinder</title>
+
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<!-- Font Awesome Glyphicons -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+	<!-- Chosen -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 content img-rounded">
+                <h2 class="one col-md-offset-1">About You</h2>
+                <div class="form-group row">
+                    <label for="name" class="col-md-1 col-form-label text-right col-md-offset-1">
+                     <h4>Name:</h4>
+                     </label>
+                    <div class="col-md-3">
+                    <input class="form-control" type="text" value="" id="name">
+                    </div>
+                    <label for="photo" class="col-md-3 col-form-label text-right">
+                    <h4>Link to Photo Image:</h4>
+                    </label>
+                    <div class="col-md-3">
+                    <input class="form-control" type="text" value="" id="photo">
+                    </div>
+                </div>
+              
+                <hr>
+                <div class="col-md-5 col-md-offset-1">
+                    <h3 class="one">Question 1</h3>
+                    <h4>How much are you a fan of cartoons?</h4>
+                    <select class="select" id="q1">
+                        <option value="" disabled selected>Select an Option</option>
+                        <option value="1">1 (No Way)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Absolutely)</option>
+                    </select>
+                    <h3 class="one">Question 3</h3>
+                    <h4>Would you ever go to a hockey game?</h4>
+                    <select class="select" id="q2">
+                        <option value="" disabled selected>Select an Option</option>
+                        <option value="1">1 (Never)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Of Course)</option>
+                    </select>
+                    <h3 class="one">Question 5</h3>
+                    <h4>Do you care why the sky is blue?</h4>
+                    <select class="select" id="q3">
+                        <option value="" disabled selected>Select an Option</option>
+                        <option value="1">1 (Never Thought It)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (All The Time...)</option>
+                    </select>
+                    <h3 class="one">Question 7</h3>
+                    <h4>How much do you like tacos?</h4>
+                    <select class="select" id="q4">
+                        <option value="" disabled selected>Select an Option</option>
+                        <option value="1">1 (Grossest Thing Ever)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Love em')</option>
+                    </select>
+                    <h3 class="one">Question 7</h3>
+                    <h4>How much do you play video games?</h4>
+                    <select class="select" id="q5">
+                        <option value="" disabled selected>Select an Option</option>
+                        <option value="1">1 (Never)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (A Ton)</option>
+                    </select>
+                </div>
+                <div class="col-md-5">
+                    <h3 class="one">Question 2</h3>
+                    <h4>If you had to fart, how loud would you rip it?</h4>
+                    <select class="select" id="q6">
+                        <option value="" disabled selected>Select an Option</option>
+                        <option value="1">1 (Silent, maybe deadly)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Tuba-like)</option>
+                    </select>
+                    <h3 class="one">Question 4</h3>
+                    <h4>Do you enjoy Star Wars?</h4>
+                    <select class="select" id="q7">
+                        <option value="" disabled selected>Select an Option</option>
+                        <option value="1">1 (Never Seen It)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (I Am Your Only Hope)</option>
+                    </select>
+                    <h3 class="one">Question 6</h3>
+                    <h4>What kind of smart are you?</h4>
+                    <select class="select" id="q8">
+                        <option value="" disabled selected>Select an Option</option>
+                        <option value="1">1 (Street)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Book)</option>
+                    </select>
+                    <h3 class="one">Question 8</h3>
+                    <h4>Are you more Backstreet Boys or N'Sync?</h4>
+                    <select class="select" id="q9">
+                        <option value="" disabled selected>Select an Option</option>
+                        <option value="1">1 (Larger Than Life)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (It's Gunna Be Me)</option>
+                    </select>
+                    <h3 class="one">Question 10</h3>
+                    <h4>Are you more Digimon or Pokemon?</h4>
+                    <select class="select" id="q10">
+                        <option value="" disabled selected>Select an Option</option>
+                        <option value="1">1 (Digimon)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Pokemon)</option>
+                    </select>
+                    <br>
+                    <br>
+                   
+                    <div class="text-right">
+                    <button type="submit" class="btn btn-info btn-lg text-right one" id="submit">submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer text-right">
+        <div class="container">
+            <p><a href="/api/friends">API Friends List</a> | <a target="_blank" href="https://github.com/BitschenFitschen/FriendFinder">GitHub Repo</a></p>
+        </div>
+    </footer>
+    </div>
+    </div>
+    </div>
+
+    <div id="resultsModal" class="modal fade" role="dialog">
+     <div class="modal-dialog">
+        <div class="modal-content">
+              <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title">Best Match</h2>
+                </div>
+                <div class="modal-body">
+                    <h2 id="matchName"></h2>
+                    <img id="matchImg" src="" alt="">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+         </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+ 
+    $("#submit").on("click", function() {
+        
+        function validateForm() {
+            var isValid = true;
+            $('.form-control').each(function() {
+             if ($(this).val() === '')
+               isValid = false;
+            });
+            $('.select').each(function() {
+                if ($(this).val() === null)
+                 isValid = false
+            })
+            return isValid;
+        }
+       
+     if (validateForm() == true) {
+            
+      var q = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
+            var scores = [];
+            for (var i in q) {
+                var val = $('#q' + q[i]).val();
+               scores.push(val);
+                console.log(scores)
+            }
+            
+            var userData = {
+                name: $("#name").val(),
+                photo: $("#photo").val(),
+                scores: scores
+            }
+            
+            var currentURL = window.location.origin;
+           
+            $.post(currentURL + "/api/friends", userData, function(data) {
+           
+                $('#matchName').text(data.name);
+                $('#matchImg').attr("src", data.photo);
+                $("#resultsModal").modal('toggle');
+            });
+    }  
+        else {
+            alert("Please fill out all fields before submitting!");
+        }
+        return false;
+    });
+    </script>
+</body>
+
+</html>
+
+
+<!--
+<script type="text/javascript">
+
+function captureclick(){
+	// var userInfo = document.getElementsById("photo" "name");
+	// var userInfo = " ";
+
+
+	var submission = document.getElementsByClassName("questions");
+	var answerArr = [];
+	for (i = 0; i < submission.length; i++){
+		console.log(submission[i].value);
+		answerArr.push(submission[i].value);
+	}
+
+	$.ajax({
+		type:"post",
+		url: "/answers",
+		data: {info:answerArr},
+		success: function(){
+			console.log("Yayyyyy!");
+		}
+	})
+};
+
+--> 
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
