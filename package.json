@@ -1,7 +1,7 @@
 {
   "name": "study_session",
   "version": "1.0.0",
-  "description": "",
+  "description": "A quiz to find which friend is most like you!",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,5 +12,14 @@
   "dependencies": {
     "body-parser": "^1.17.1",
     "express": "^4.15.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BitschenFitschen/FriendFinder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BitschenFitschen/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/BitschenFitschen/FriendFinder#readme"
 }

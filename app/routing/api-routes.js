@@ -1,7 +1,9 @@
 var express = require('express');
 var router = express.Router();
 var path = require('path');
-var jsonfile = require('jsonfile');
+
+// var jsonfile = require('jsonfile');
+var friendsInfo = require('../data/friends.json');
 var file = './app/data/friends.js';
 
 // Show all friends
@@ -10,18 +12,22 @@ router.get('/api/friends', function(req, res) {
 })
 
 router.post('/api/friends', function(req, res) {
-    
-    var friends = jsonfile.readFileSync(file);
+    console.log(req.body)
+    console.log('hellowordl')
+    var selfInfo = req.body
+    var match = findFriend(selfInfo, friendsInfo);
+    res.json(match);
+    // var friends = jsonfile.readFileSync(file);
   
-    var index = findFriend(req.body, friends);
+    // var index = findFriend(req.body, friends);
   
-    friends.push(req.body);
-    jsonfile.writeFileSync(file, friends, { spaces: 2 });
+    // friends.push(req.body);
+    // jsonfile.writeFileSync(file, friends, { spaces: 2 });
 
-    res.json({
-        name: friends[index].name,
-        photo: friends[index].photo,
-    });
+    // res.json({
+    //     name: friends[index].name,
+    //     photo: friends[index].photo,
+    // });
 })
 function findFriend(self, friends) {
     var friend = {};
@@ -41,7 +47,7 @@ function findFriend(self, friends) {
         }
     }
     console.log(friend);
-    return friend.index;
+    return friends[friend.index];
 }
 
 module.exports = router;
